@@ -1,13 +1,14 @@
 from auth import TOKEN
 from telegram.ext import Updater, CommandHandler
 from commands import start, showPlot
-from processing.start_scrapper import star_scrapper as str_sc
+
 
 
 
 if __name__ == '__main__':
     # st = str_sc()
     # print(st.stars_list)
+    # print(st.create_dot_map())
     updater = Updater(TOKEN, use_context=True)
     dispatcher = updater.dispatcher
 
